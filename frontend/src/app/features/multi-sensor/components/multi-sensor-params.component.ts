@@ -97,8 +97,8 @@ import { MultiSensorStoreService } from '../../../core/services/multi-sensor-sto
               <mat-form-field appearance="outline">
                 <mat-label>Direcție Z</mat-label>
                 <mat-select formControlName="directionZ">
+                  <mat-option value="IN JOS">-Z = IN JOS (tasare)</mat-option>
                   <mat-option value="IN SUS">+Z = IN SUS (ridicare)</mat-option>
-                  <mat-option value="IN JOS">+Z = IN JOS (tasare)</mat-option>
                 </mat-select>
                 <mat-hint>Sens pozitiv axa Z</mat-hint>
               </mat-form-field>
