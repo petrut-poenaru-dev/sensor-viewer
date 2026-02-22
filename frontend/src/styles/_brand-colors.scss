@@ -1,0 +1,95 @@
+// Brand Colors - Adaptate pentru logo-ul Graphein
+// Modifică aceste culori pentru a se potrivi cu paleta din logo
+
+// Primary Brand Colors (ajustează după culorile din logo)
+$brand-primary: #00d4ff;        // Cyan principal
+$brand-secondary: #0099ff;      // Blue secundar
+$brand-accent: #00ff88;         // Verde accent (pentru success states)
+
+// Alternative color schemes - decomentează setul care se potrivește cu logo-ul tău:
+
+// Option 1: Blue Corporate (default)
+// $brand-primary: #0066cc;
+// $brand-secondary: #004999;
+// $brand-accent: #0088ff;
+
+// Option 2: Purple Tech
+// $brand-primary: #7c3aed;
+// $brand-secondary: #5b21b6;
+// $brand-accent: #a78bfa;
+
+// Option 3: Green Innovation
+// $brand-primary: #10b981;
+// $brand-secondary: #059669;
+// $brand-accent: #34d399;
+
+// Option 4: Orange Energy
+// $brand-primary: #f59e0b;
+// $brand-secondary: #d97706;
+// $brand-accent: #fbbf24;
+
+// Option 5: Red Dynamic
+// $brand-primary: #ef4444;
+// $brand-secondary: #dc2626;
+// $brand-accent: #f87171;
+
+$bg-dark: #0a0e27;
+$bg-medium: #1a1f3a;
+$bg-light: #0f1729;
+$bg-card: rgba(20, 30, 60, 0.6);
+
+$text-primary: #e0e6ed;
+$text-secondary: #94a3b8;
+$text-muted: #64748b;
+$text-dark: #0a0e27;
+
+$success: #00ff88;
+$error: #ef4444;
+$warning: #fbbf24;
+$info: #3b82f6;
+
+$brand-primary-10: rgba($brand-primary, 0.1);
+$brand-primary-20: rgba($brand-primary, 0.2);
+$brand-primary-30: rgba($brand-primary, 0.3);
+$brand-primary-40: rgba($brand-primary, 0.4);
+$brand-primary-50: rgba($brand-primary, 0.5);
+
+$gradient-primary: linear-gradient(135deg, $brand-primary 0%, $brand-secondary 100%);
+$gradient-text: linear-gradient(135deg, #ffffff 0%, $brand-primary 100%);
+$gradient-bg: linear-gradient(135deg, $bg-dark 0%, $bg-medium 50%, $bg-light 100%);
+
+$shadow-glow: 0 0 20px rgba($brand-primary, 0.3);
+$shadow-glow-strong: 0 0 30px rgba($brand-primary, 0.5);
+$shadow-card: 0 8px 32px rgba(0, 0, 0, 0.4);
+$shadow-card-hover: 0 12px 48px rgba(0, 0, 0, 0.5);
+
+// Border
+$border-primary: 1px solid rgba($brand-primary, 0.2);
+$border-primary-hover: 1px solid rgba($brand-primary, 0.4);
+
+// Transitions
+$transition-fast: 0.2s ease;
+$transition-normal: 0.3s ease;
+$transition-slow: 0.5s ease;
+
+// Border Radius
+$radius-sm: 8px;
+$radius-md: 12px;
+$radius-lg: 16px;
+$radius-xl: 20px;
+$radius-2xl: 24px;
+
+// Spacing
+$spacing-xs: 4px;
+$spacing-sm: 8px;
+$spacing-md: 16px;
+$spacing-lg: 24px;
+$spacing-xl: 32px;
+$spacing-2xl: 48px;
+
+// Z-index layers
+$z-background: 0;
+$z-content: 1;
+$z-header: 100;
+$z-modal: 1000;
+$z-tooltip: 2000;
