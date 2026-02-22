@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { BehaviorSubject, Observable, tap } from 'rxjs';
 import { Router } from '@angular/router';
-import { environment } from '../../../environments/environment';
+import { environment } from '@env';
 
 export interface User {
   id: string;
@@ -21,7 +21,7 @@ export interface LoginResponse {
 export class AuthService {
   private readonly API_URL = `${environment.apiUrl}/auth`;
   private readonly TOKEN_KEY = 'sensorhub_token';
-  
+
   private currentUserSubject = new BehaviorSubject<User | null>(null);
   public currentUser$ = this.currentUserSubject.asObservable();
 
