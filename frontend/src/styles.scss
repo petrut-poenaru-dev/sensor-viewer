@@ -9,67 +9,66 @@ html, body {
   margin: 0;
   padding: 0;
 }
+
 .mat-mdc-form-field.mat-focused .mdc-text-field {
   box-shadow: none !important;
 }
+
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 50%, #0f1729 100%);
+  background: linear-gradient(135deg, #FFFFFF 0%, #F7F7F7 50%, #FFFFFF 100%);
   background-attachment: fixed;
-  color: #e0e6ed;
+  color: #020202;
   overflow-x: hidden;
 }
 
-// Futuristic scrollbar
+// Modern scrollbar - Light theme
 ::-webkit-scrollbar {
   width: 10px;
   height: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background: rgba(15, 23, 42, 0.5);
+  background: rgba(247, 247, 247, 0.5);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #00d4ff 0%, #0099ff 100%);
+  background: linear-gradient(180deg, #149238 0%, #0f6b28 100%);
   border-radius: 10px;
-  border: 2px solid rgba(15, 23, 42, 0.5);
+  border: 2px solid rgba(247, 247, 247, 0.5);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(180deg, #00e5ff 0%, #00b0ff 100%);
+  background: linear-gradient(180deg, #1ab547 0%, #149238 100%);
 }
 
-// Material overrides for dark futuristic theme
+// Material overrides for light green theme
 .mat-mdc-card {
-  background: rgba(20, 30, 60, 0.6) !important;
+  background: #FFFFFF !important;
   backdrop-filter: blur(20px);
-  border: 1px solid rgba(0, 212, 255, 0.2);
+  border: 1px solid rgba(20, 146, 56, 0.2);
   border-radius: 16px !important;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4),
-              0 0 0 1px rgba(0, 212, 255, 0.1),
-              inset 0 1px 0 rgba(255, 255, 255, 0.05) !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1),
+  0 0 0 1px rgba(20, 146, 56, 0.05) !important;
   transition: all 0.3s ease;
 
   &:hover {
-    border-color: rgba(0, 212, 255, 0.4);
-    box-shadow: 0 12px 48px rgba(0, 0, 0, 0.5),
-                0 0 20px rgba(0, 212, 255, 0.2),
-                inset 0 1px 0 rgba(255, 255, 255, 0.08) !important;
+    border-color: rgba(20, 146, 56, 0.4);
+    box-shadow: 0 4px 16px rgba(20, 146, 56, 0.15),
+    0 0 0 1px rgba(20, 146, 56, 0.1) !important;
     transform: translateY(-2px);
   }
 }
 
 .mat-mdc-card-title {
-  color: #00d4ff !important;
+  color: #149238 !important;
   font-weight: 600 !important;
   font-size: 1.5rem !important;
   letter-spacing: 0.5px;
-  text-shadow: 0 0 20px rgba(0, 212, 255, 0.3);
 }
 
 .mat-mdc-card-subtitle {
-  color: #94a3b8 !important;
+  color: #4a4a4a !important;
   font-size: 0.9rem !important;
 }
 
@@ -82,49 +81,56 @@ body {
 }
 
 .mat-mdc-raised-button.mat-primary {
-  background: linear-gradient(135deg, #00d4ff 0%, #0099ff 100%) !important;
-  color: #0a0e27 !important;
-  box-shadow: 0 4px 15px rgba(0, 212, 255, 0.4) !important;
+  background: linear-gradient(135deg, #149238 0%, #0f6b28 100%) !important;
+  color: #FFFFFF !important;
+  box-shadow: 0 2px 8px rgba(20, 146, 56, 0.3) !important;
 
   &:hover:not(:disabled) {
-    box-shadow: 0 6px 25px rgba(0, 212, 255, 0.6) !important;
+    box-shadow: 0 4px 16px rgba(20, 146, 56, 0.4) !important;
     transform: translateY(-2px);
   }
 
   &:disabled {
     cursor: not-allowed !important;
-    background: rgba(100, 116, 139, 0.3) !important;
-    color: rgba(148, 163, 184, 0.5) !important;
+    background: rgba(200, 200, 200, 0.3) !important;
+    color: rgba(100, 100, 100, 0.5) !important;
     box-shadow: none !important;
     opacity: 0.6;
   }
 }
 
 .mat-mdc-outlined-button, .mat-mdc-stroked-button {
-  border-color: rgba(0, 212, 255, 0.5) !important;
-  color: #00d4ff !important;
+  border-color: rgba(20, 146, 56, 0.4) !important;
+  color: #149238 !important;
+  border-width: 2px !important;
+  font-weight: 600 !important;
 
   &:hover {
-    background: rgba(0, 212, 255, 0.1) !important;
-    border-color: #00d4ff !important;
+    background: rgba(20, 146, 56, 0.08) !important;
+    border-color: #149238 !important;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(20, 146, 56, 0.2) !important;
   }
 }
 
+// Stiluri îmbunătățite pentru form fields
 .mat-mdc-form-field {
   .mdc-text-field--outlined {
-    background: rgba(15, 23, 42, 0.5) !important;
-    border-radius: 8px !important;
+    background: #FFFFFF !important;
+    border-radius: 12px !important;
+    transition: all 0.3s ease;
 
     .mdc-notched-outline__leading,
     .mdc-notched-outline__notch,
     .mdc-notched-outline__trailing {
-      border-color: rgba(0, 212, 255, 0.3) !important;
+      border-color: rgba(20, 146, 56, 0.25) !important;
+      border-width: 2px !important;
     }
 
     &:hover .mdc-notched-outline__leading,
     &:hover .mdc-notched-outline__notch,
     &:hover .mdc-notched-outline__trailing {
-      border-color: rgba(0, 212, 255, 0.5) !important;
+      border-color: rgba(20, 146, 56, 0.5) !important;
     }
   }
 
@@ -132,19 +138,54 @@ body {
     .mdc-notched-outline__leading,
     .mdc-notched-outline__notch,
     .mdc-notched-outline__trailing {
-      border-color: #00d4ff !important;
+      border-color: #149238 !important;
+      border-width: 2px !important;
     }
   }
-  .form-card{
-    padding: 12px;
-  }
+
   .mat-mdc-form-field-label {
-    color: #94a3b8 !important;
+    color: #149238 !important;
+    font-weight: 500 !important;
   }
 
   .mat-mdc-select-value,
   .mat-mdc-input-element {
-    color: #e0e6ed !important;
+    color: #020202 !important;
+    font-weight: 500 !important;
+  }
+
+  .mat-mdc-select-arrow {
+    color: #149238 !important;
+  }
+}
+
+.mat-mdc-form-field.mat-mdc-form-field.mat-mdc-form-field.mat-mdc-form-field.mat-mdc-form-field.mat-mdc-form-field .mdc-notched-outline__notch{
+  border:none !important;
+}
+
+  // Select dropdown styling
+.mat-mdc-select-panel {
+  background: white !important;
+  border: 2px solid #149238 !important;
+  box-shadow: 0 8px 24px rgba(20, 146, 56, 0.15) !important;
+  margin-top: 8px;
+}
+
+.mat-mdc-option {
+  color: black !important;
+  font-weight: 500 !important;
+  padding: 12px 16px !important;
+  transition: all 0.2s ease;
+  background: white !important;
+
+  &:hover {
+    background: rgba(6, 69, 23, 0.15) !important;
+  }
+
+  &.mat-mdc-option-active,
+  &.mdc-list-item--selected {
+    background: rgba(20, 146, 56, 0.15) !important;
+    color: #149238 !important;
   }
 }
 
@@ -165,36 +206,29 @@ body {
   box-shadow: none !important;
 }
 
-.mat-mdc-select-panel {
-  background: rgba(15, 23, 42, 0.95) !important;
-  backdrop-filter: blur(20px);
-  border: 1px solid rgba(0, 212, 255, 0.3);
-  border-radius: 8px !important;
-}
-
-.mat-mdc-option {
-  color: #e0e6ed !important;
-
-  &:hover {
-    background: rgba(0, 212, 255, 0.1) !important;
-  }
-
-  &.mat-mdc-option-active {
-    background: rgba(0, 212, 255, 0.15) !important;
-  }
-}
+//.mat-mdc-option {
+//  color: #e0e6ed !important;
+//
+//  &:hover {
+//    background: rgba(20, 146, 56, 0.1) !important;
+//  }
+//
+//  &.mat-mdc-option-active {
+//    background: rgba(20, 146, 56, 0.15) !important;
+//  }
+//}
 
 .mat-icon {
-  color: #00d4ff;
+  color: #149238;
 }
 
 // Animations
 @keyframes glow {
   0%, 100% {
-    text-shadow: 0 0 10px rgba(0, 212, 255, 0.3);
+    text-shadow: 0 0 10px rgba(20, 146, 56, 0.3);
   }
   50% {
-    text-shadow: 0 0 20px rgba(0, 212, 255, 0.6);
+    text-shadow: 0 0 20px rgba(20, 146, 56, 0.6);
   }
 }
 
@@ -215,10 +249,9 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image:
-    radial-gradient(circle at 20% 50%, rgba(0, 212, 255, 0.05) 0%, transparent 50%),
-    radial-gradient(circle at 80% 80%, rgba(0, 153, 255, 0.05) 0%, transparent 50%),
-    radial-gradient(circle at 40% 20%, rgba(0, 212, 255, 0.03) 0%, transparent 50%);
+  background-image: radial-gradient(circle at 20% 50%, rgba(20, 146, 56, 0.05) 0%, transparent 50%),
+  radial-gradient(circle at 80% 80%, rgba(0, 153, 255, 0.05) 0%, transparent 50%),
+  radial-gradient(circle at 40% 20%, rgba(20, 146, 56, 0.03) 0%, transparent 50%);
   pointer-events: none;
   z-index: 0;
 }
@@ -231,9 +264,8 @@ body::after {
   left: -50%;
   width: 200%;
   height: 200%;
-  background:
-    radial-gradient(circle at 30% 40%, rgba(0, 212, 255, 0.08) 0%, transparent 25%),
-    radial-gradient(circle at 70% 60%, rgba(0, 153, 255, 0.06) 0%, transparent 25%);
+  background: radial-gradient(circle at 30% 40%, rgba(20, 146, 56, 0.08) 0%, transparent 25%),
+  radial-gradient(circle at 70% 60%, rgba(0, 153, 255, 0.06) 0%, transparent 25%);
   animation: rotate 30s linear infinite;
   pointer-events: none;
   z-index: 0;
@@ -260,20 +292,20 @@ app-root {
 }
 
 .mat-mdc-header-row {
-  background: rgba(0, 212, 255, 0.1) !important;
+  background: rgba(20, 146, 56, 0.1) !important;
 }
 
 .mat-mdc-row {
   transition: background 0.2s ease;
 
   &:hover {
-    background: rgba(0, 212, 255, 0.05) !important;
+    background: rgba(20, 146, 56, 0.05) !important;
   }
 }
 
 .mat-mdc-cell, .mat-mdc-header-cell {
   color: #e0e6ed !important;
-  border-bottom-color: rgba(0, 212, 255, 0.1) !important;
+  border-bottom-color: rgba(20, 146, 56, 0.1) !important;
 }
 
 .mat-mdc-paginator {
@@ -285,13 +317,13 @@ app-root {
   }
 
   .mat-mdc-icon-button {
-    color: #00d4ff !important;
+    color: #149238 !important;
   }
 }
 
 // Material hints and labels
 .mat-mdc-form-field-hint {
-  color: #64748b !important;
+  color: #149238 !important;
 }
 
 // Improve Material card headers
@@ -305,18 +337,18 @@ app-root {
 
 // Selection styling
 ::selection {
-  background: rgba(0, 212, 255, 0.3);
+  background: rgba(20, 146, 56, 0.3);
   color: #ffffff;
 }
 
 ::-moz-selection {
-  background: rgba(0, 212, 255, 0.3);
+  background: rgba(20, 146, 56, 0.3);
   color: #ffffff;
 }
 
 // Focus visible for accessibility
 *:focus-visible {
-  outline: 2px solid #00d4ff;
+  outline: 2px solid #149238;
   outline-offset: 2px;
 }
 

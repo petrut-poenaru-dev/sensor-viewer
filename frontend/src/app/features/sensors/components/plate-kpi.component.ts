@@ -100,18 +100,18 @@ import { PlateStoreService } from '../../../core/services/plate-store.service';
     .icon-badge {
       width: 48px;
       height: 48px;
-      background: linear-gradient(135deg, rgba(0, 212, 255, 0.2) 0%, rgba(0, 153, 255, 0.2) 100%);
+      background: linear-gradient(135deg, rgba(20, 146, 56, 0.2) 0%, rgba(15, 107, 40, 0.2) 100%);
       border-radius: 12px;
       display: flex;
       align-items: center;
       justify-content: center;
-      border: 1px solid rgba(0, 212, 255, 0.3);
+      border: 1px solid rgba(20, 146, 56, 0.3);
 
       mat-icon {
         font-size: 28px;
         width: 28px;
         height: 28px;
-        color: #00d4ff;
+        color: #149238;
       }
     }
 
@@ -131,22 +131,22 @@ import { PlateStoreService } from '../../../core/services/plate-store.service';
       align-items: center;
       gap: 12px;
       padding: 16px;
-      background: rgba(15, 23, 42, 0.5);
+      background: rgba(255, 255, 255, 0.5);
       border-radius: 12px;
-      border: 1px solid rgba(0, 212, 255, 0.15);
+      border: 1px solid rgba(20, 146, 56, 0.15);
       transition: all 0.3s ease;
 
       &:hover {
-        border-color: rgba(0, 212, 255, 0.4);
+        border-color: rgba(20, 146, 56, 0.4);
         transform: translateY(-2px);
-        box-shadow: 0 4px 20px rgba(0, 212, 255, 0.2);
+        box-shadow: 0 4px 20px rgba(20, 146, 56, 0.2);
       }
     }
 
     .kpi-icon {
       width: 40px;
       height: 40px;
-      background: rgba(0, 212, 255, 0.1);
+      background: rgba(20, 146, 56, 0.1);
       border-radius: 10px;
       display: flex;
       align-items: center;
@@ -157,7 +157,7 @@ import { PlateStoreService } from '../../../core/services/plate-store.service';
         font-size: 24px;
         width: 24px;
         height: 24px;
-        color: #00d4ff;
+        color: #149238;
       }
     }
 
@@ -167,7 +167,7 @@ import { PlateStoreService } from '../../../core/services/plate-store.service';
 
     .label {
       font-size: 0.75rem;
-      color: #94a3b8;
+      color: #4a4a4a;
       text-transform: uppercase;
       letter-spacing: 0.5px;
       font-weight: 500;
@@ -177,14 +177,14 @@ import { PlateStoreService } from '../../../core/services/plate-store.service';
     .val {
       font-size: 1.5rem;
       font-weight: 700;
-      color: #e0e6ed;
+      color: #020202;
       line-height: 1;
     }
 
     .unit {
       font-size: 0.9rem;
       font-weight: 400;
-      color: #94a3b8;
+      color: #4a4a4a;
       margin-left: 4px;
     }
 
@@ -213,3 +213,5 @@ import { PlateStoreService } from '../../../core/services/plate-store.service';
 export class PlateKpiComponent {
   constructor(public readonly store: PlateStoreService) {}
 }
+
+

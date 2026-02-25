@@ -65,23 +65,23 @@ import { MultiSensorStoreService } from '../../core/services/multi-sensor-store.
     .icon-wrapper {
       width: 80px;
       height: 80px;
-      background: rgba(20, 30, 60, 0.6);
+      background: rgba(255, 255, 255, 0.6);
       backdrop-filter: blur(10px);
       border-radius: 20px;
       display: flex;
       align-items: center;
       justify-content: center;
       box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4),
-                  0 0 0 1px rgba(0, 212, 255, 0.2);
+                  0 0 0 1px rgba(20, 146, 56, 0.2);
       animation: float 3s ease-in-out infinite;
       padding: 16px;
-      border: 2px solid rgba(0, 212, 255, 0.3);
+      border: 2px solid rgba(20, 146, 56, 0.3);
 
       mat-icon {
         font-size: 48px;
         width: 48px;
         height: 48px;
-        color: #00d4ff;
+        color: #149238;
       }
     }
 
@@ -89,15 +89,12 @@ import { MultiSensorStoreService } from '../../core/services/multi-sensor-store.
       font-size: 2rem;
       font-weight: 700;
       margin: 0 0 4px 0;
-      background: linear-gradient(135deg, #ffffff 0%, #00d4ff 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
+      color:#149238;
     }
 
     .subtitle {
       font-size: 1rem;
-      color: #94a3b8;
+      color: #4a4a4a;
       margin: 0;
     }
 
@@ -125,3 +122,5 @@ import { MultiSensorStoreService } from '../../core/services/multi-sensor-store.
 export class MultiSensorPage {
   constructor(public store: MultiSensorStoreService) {}
 }
+
+

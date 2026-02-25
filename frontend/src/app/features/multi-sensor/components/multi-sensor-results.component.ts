@@ -203,18 +203,18 @@ import { CalcResult } from '../../../core/models/multi-sensor.model';
     .icon-badge {
       width: 48px;
       height: 48px;
-      background: linear-gradient(135deg, rgba(0, 212, 255, 0.2) 0%, rgba(0, 153, 255, 0.2) 100%);
+      background: linear-gradient(135deg, rgba(20, 146, 56, 0.2) 0%, rgba(15, 107, 40, 0.2) 100%);
       border-radius: 12px;
       display: flex;
       align-items: center;
       justify-content: center;
-      border: 1px solid rgba(0, 212, 255, 0.3);
+      border: 1px solid rgba(20, 146, 56, 0.3);
 
       mat-icon {
         font-size: 28px;
         width: 28px;
         height: 28px;
-        color: #00d4ff;
+        color: #149238;
       }
     }
 
@@ -230,20 +230,20 @@ import { CalcResult } from '../../../core/models/multi-sensor.model';
     .table-container {
       overflow-x: auto;
       border-radius: 12px;
-      border: 1px solid rgba(0, 212, 255, 0.15);
+      border: 1px solid rgba(20, 146, 56, 0.15);
       max-height: 600px;
       overflow-y: auto;
     }
 
     .calc-table {
       width: 100%;
-      background: rgba(15, 23, 42, 0.3);
+      background: rgba(255, 255, 255, 0.3);
       min-width: 2000px;
     }
 
     th {
-      background: rgba(0, 212, 255, 0.1) !important;
-      color: #00d4ff !important;
+      background: rgba(20, 146, 56, 0.1) !important;
+      color: #149238 !important;
       font-weight: 600 !important;
       text-transform: uppercase;
       letter-spacing: 0.5px;
@@ -256,16 +256,16 @@ import { CalcResult } from '../../../core/models/multi-sensor.model';
     }
 
     td {
-      color: #e0e6ed !important;
+      color: #020202 !important;
       padding: 10px 8px !important;
       white-space: nowrap;
-      border-bottom: 1px solid rgba(0, 212, 255, 0.1) !important;
+      border-bottom: 1px solid rgba(20, 146, 56, 0.1) !important;
       font-size: 0.85rem;
       font-family: 'Courier New', monospace;
     }
 
     tr:hover td {
-      background: rgba(0, 212, 255, 0.05) !important;
+      background: rgba(20, 146, 56, 0.05) !important;
     }
 
     .direction-cell {
@@ -275,7 +275,7 @@ import { CalcResult } from '../../../core/models/multi-sensor.model';
     }
 
     .status-ok {
-      color: #00ff88 !important;
+      color: #1ab547 !important;
       font-weight: 600;
     }
 
@@ -285,8 +285,8 @@ import { CalcResult } from '../../../core/models/multi-sensor.model';
     }
 
     .custom-paginator {
-      background: rgba(15, 23, 42, 0.3);
-      border-top: 1px solid rgba(0, 212, 255, 0.2);
+      background: rgba(255, 255, 255, 0.3);
+      border-top: 1px solid rgba(20, 146, 56, 0.2);
     }
 
     .results-summary {
@@ -294,13 +294,13 @@ import { CalcResult } from '../../../core/models/multi-sensor.model';
       align-items: center;
       gap: 12px;
       padding: 16px;
-      background: rgba(0, 212, 255, 0.05);
+      background: rgba(20, 146, 56, 0.05);
       border-radius: 8px;
       margin-top: 16px;
-      color: #94a3b8;
+      color: #4a4a4a;
 
       mat-icon {
-        color: #00d4ff;
+        color: #149238;
       }
     }
 
@@ -316,18 +316,18 @@ import { CalcResult } from '../../../core/models/multi-sensor.model';
         font-size: 64px;
         width: 64px;
         height: 64px;
-        color: #64748b;
+        color: #808080;
         margin-bottom: 16px;
       }
 
       h3 {
         font-size: 1.5rem;
-        color: #e0e6ed;
+        color: #020202;
         margin: 0 0 8px 0;
       }
 
       p {
-        color: #94a3b8;
+        color: #4a4a4a;
         max-width: 500px;
         margin: 0;
       }
@@ -433,3 +433,5 @@ export class MultiSensorResultsComponent {
     });
   }
 }
+
+

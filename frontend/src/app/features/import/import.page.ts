@@ -95,17 +95,17 @@ import {CommonModule} from '@angular/common';
       width: 120px;
       height: 120px;
       margin: 0 auto 20px;
-      background: rgba(20, 30, 60, 0.6);
+      background: rgba(255, 255, 255, 0.6);
       backdrop-filter: blur(10px);
       border-radius: 24px;
       display: flex;
       align-items: center;
       justify-content: center;
       box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4),
-                  0 0 0 1px rgba(0, 212, 255, 0.2);
+                  0 0 0 1px rgba(20, 146, 56, 0.2);
       animation: float 3s ease-in-out infinite;
       padding: 20px;
-      border: 2px solid rgba(0, 212, 255, 0.3);
+      border: 2px solid rgba(20, 146, 56, 0.3);
 
       .hero-logo {
         width: 100%;
@@ -118,7 +118,7 @@ import {CommonModule} from '@angular/common';
         font-size: 48px;
         width: 48px;
         height: 48px;
-        color: #00d4ff;
+        color: #149238;
       }
     }
 
@@ -126,7 +126,7 @@ import {CommonModule} from '@angular/common';
       font-size: 2.5rem;
       font-weight: 700;
       margin: 0 0 12px 0;
-      background: linear-gradient(135deg, #ffffff 0%, #00d4ff 100%);
+      background: linear-gradient(135deg, #ffffff 0%, #149238 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
@@ -135,7 +135,7 @@ import {CommonModule} from '@angular/common';
 
     .hero-subtitle {
       font-size: 1.1rem;
-      color: #94a3b8;
+      color: #4a4a4a;
       margin: 0;
     }
 
@@ -145,28 +145,28 @@ import {CommonModule} from '@angular/common';
     }
 
     .upload-zone {
-      border: 2px dashed rgba(0, 212, 255, 0.3);
+      border: 2px dashed rgba(20, 146, 56, 0.3);
       border-radius: 16px;
       padding: 48px 32px;
       text-align: center;
       cursor: pointer;
       transition: all 0.3s ease;
-      background: rgba(15, 23, 42, 0.3);
+      background: rgba(255, 255, 255, 0.3);
       margin-bottom: 24px;
 
       &:hover {
-        border-color: rgba(0, 212, 255, 0.6);
-        background: rgba(15, 23, 42, 0.5);
+        border-color: rgba(20, 146, 56, 0.6);
+        background: rgba(255, 255, 255, 0.5);
         transform: translateY(-4px);
-        box-shadow: 0 8px 30px rgba(0, 212, 255, 0.2);
+        box-shadow: 0 8px 30px rgba(20, 146, 56, 0.2);
       }
 
       &.has-data {
-        border-color: rgba(0, 255, 136, 0.5);
-        background: rgba(0, 255, 136, 0.05);
+        border-color: rgba(26, 181, 71, 0.5);
+        background: rgba(26, 181, 71, 0.05);
 
         .upload-icon mat-icon {
-          color: #00ff88;
+          color: #1ab547;
         }
       }
     }
@@ -178,7 +178,7 @@ import {CommonModule} from '@angular/common';
         font-size: 64px;
         width: 64px;
         height: 64px;
-        color: #00d4ff;
+        color: #149238;
         transition: all 0.3s ease;
       }
     }
@@ -186,19 +186,19 @@ import {CommonModule} from '@angular/common';
     .upload-zone h3 {
       font-size: 1.3rem;
       font-weight: 600;
-      color: #e0e6ed;
+      color: #020202;
       margin: 0 0 8px 0;
     }
 
     .upload-zone p {
-      color: #94a3b8;
+      color: #4a4a4a;
       margin: 4px 0;
       font-size: 0.95rem;
     }
 
     .file-info {
       font-size: 0.85rem !important;
-      color: #64748b !important;
+      color: #808080 !important;
       margin-top: 12px !important;
     }
 
@@ -248,12 +248,12 @@ import {CommonModule} from '@angular/common';
       }
 
       &.success {
-        background: rgba(0, 255, 136, 0.1);
-        border: 1px solid rgba(0, 255, 136, 0.3);
+        background: rgba(26, 181, 71, 0.1);
+        border: 1px solid rgba(26, 181, 71, 0.3);
         color: #86efac;
 
         mat-icon {
-          color: #00ff88;
+          color: #1ab547;
         }
       }
     }
@@ -266,9 +266,9 @@ import {CommonModule} from '@angular/common';
     }
 
     .info-card {
-      background: rgba(20, 30, 60, 0.4);
+      background: rgba(255, 255, 255, 0.4);
       backdrop-filter: blur(10px);
-      border: 1px solid rgba(0, 212, 255, 0.15);
+      border: 1px solid rgba(20, 146, 56, 0.15);
       border-radius: 16px;
       padding: 24px;
       text-align: center;
@@ -280,29 +280,29 @@ import {CommonModule} from '@angular/common';
       &:nth-child(3) { animation-delay: 0.5s; }
 
       &:hover {
-        border-color: rgba(0, 212, 255, 0.4);
+        border-color: rgba(20, 146, 56, 0.4);
         transform: translateY(-4px);
-        box-shadow: 0 8px 30px rgba(0, 212, 255, 0.2);
+        box-shadow: 0 8px 30px rgba(20, 146, 56, 0.2);
       }
 
       mat-icon {
         font-size: 40px;
         width: 40px;
         height: 40px;
-        color: #00d4ff;
+        color: #149238;
         margin-bottom: 12px;
       }
 
       h4 {
         font-size: 1.1rem;
         font-weight: 600;
-        color: #e0e6ed;
+        color: #020202;
         margin: 0 0 8px 0;
       }
 
       p {
         font-size: 0.9rem;
-        color: #94a3b8;
+        color: #4a4a4a;
         margin: 0;
       }
     }
@@ -351,10 +351,10 @@ import {CommonModule} from '@angular/common';
 
     @keyframes glow {
       0%, 100% {
-        text-shadow: 0 0 10px rgba(0, 212, 255, 0.3);
+        text-shadow: 0 0 10px rgba(20, 146, 56, 0.3);
       }
       50% {
-        text-shadow: 0 0 20px rgba(0, 212, 255, 0.6);
+        text-shadow: 0 0 20px rgba(20, 146, 56, 0.6);
       }
     }
 
@@ -411,3 +411,5 @@ export class ImportPage {
     this.router.navigateByUrl('/sensors');
   }
 }
+
+

@@ -130,17 +130,17 @@ import { PlateKpiComponent } from './components/plate-kpi.component';
     .icon-wrapper {
       width: 80px;
       height: 80px;
-      background: rgba(20, 30, 60, 0.6);
+      background: rgba(255, 255, 255, 0.6);
       backdrop-filter: blur(10px);
       border-radius: 20px;
       display: flex;
       align-items: center;
       justify-content: center;
       box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4),
-                  0 0 0 1px rgba(0, 212, 255, 0.2);
+                  0 0 0 1px rgba(20, 146, 56, 0.2);
       animation: float 3s ease-in-out infinite;
       padding: 16px;
-      border: 2px solid rgba(0, 212, 255, 0.3);
+      border: 2px solid rgba(20, 146, 56, 0.3);
 
       .dashboard-logo {
         width: 100%;
@@ -153,7 +153,7 @@ import { PlateKpiComponent } from './components/plate-kpi.component';
         font-size: 36px;
         width: 36px;
         height: 36px;
-        color: #00d4ff;
+        color: #149238;
       }
     }
 
@@ -161,7 +161,7 @@ import { PlateKpiComponent } from './components/plate-kpi.component';
       font-size: 2rem;
       font-weight: 700;
       margin: 0 0 4px 0;
-      background: linear-gradient(135deg, #ffffff 0%, #00d4ff 100%);
+      background: linear-gradient(135deg, #ffffff 0%, #149238 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
@@ -169,7 +169,7 @@ import { PlateKpiComponent } from './components/plate-kpi.component';
 
     .subtitle {
       font-size: 1rem;
-      color: #94a3b8;
+      color: #4a4a4a;
       margin: 0;
     }
 
@@ -184,7 +184,7 @@ import { PlateKpiComponent } from './components/plate-kpi.component';
       gap: 20px;
       margin-bottom: 24px;
       padding-bottom: 24px;
-      border-bottom: 1px solid rgba(0, 212, 255, 0.2);
+      border-bottom: 1px solid rgba(20, 146, 56, 0.2);
     }
 
     .meta-item {
@@ -192,22 +192,22 @@ import { PlateKpiComponent } from './components/plate-kpi.component';
       align-items: center;
       gap: 12px;
       padding: 16px;
-      background: rgba(15, 23, 42, 0.5);
+      background: rgba(255, 255, 255, 0.5);
       border-radius: 12px;
-      border: 1px solid rgba(0, 212, 255, 0.15);
+      border: 1px solid rgba(20, 146, 56, 0.15);
       transition: all 0.3s ease;
 
       &:hover {
-        border-color: rgba(0, 212, 255, 0.4);
+        border-color: rgba(20, 146, 56, 0.4);
         transform: translateY(-2px);
-        box-shadow: 0 4px 20px rgba(0, 212, 255, 0.2);
+        box-shadow: 0 4px 20px rgba(20, 146, 56, 0.2);
       }
 
       mat-icon {
         font-size: 32px;
         width: 32px;
         height: 32px;
-        color: #00d4ff;
+        color: #149238;
       }
     }
 
@@ -219,7 +219,7 @@ import { PlateKpiComponent } from './components/plate-kpi.component';
 
     .meta-label {
       font-size: 0.8rem;
-      color: #94a3b8;
+      color: #4a4a4a;
       text-transform: uppercase;
       letter-spacing: 0.5px;
       font-weight: 500;
@@ -227,7 +227,7 @@ import { PlateKpiComponent } from './components/plate-kpi.component';
 
     .meta-value {
       font-size: 1.1rem;
-      color: #e0e6ed;
+      color: #020202;
       font-weight: 600;
       word-break: break-word;
       overflow: hidden;
@@ -276,32 +276,32 @@ import { PlateKpiComponent } from './components/plate-kpi.component';
     .empty-icon {
       width: 120px;
       height: 120px;
-      background: rgba(20, 30, 60, 0.6);
+      background: rgba(255, 255, 255, 0.6);
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
       margin-bottom: 24px;
-      border: 2px solid rgba(0, 212, 255, 0.2);
+      border: 2px solid rgba(20, 146, 56, 0.2);
 
       mat-icon {
         font-size: 64px;
         width: 64px;
         height: 64px;
-        color: #64748b;
+        color: #808080;
       }
     }
 
     .empty-state h2 {
       font-size: 1.8rem;
       font-weight: 600;
-      color: #e0e6ed;
+      color: #020202;
       margin: 0 0 12px 0;
     }
 
     .empty-state p {
       font-size: 1.1rem;
-      color: #94a3b8;
+      color: #4a4a4a;
       margin: 0 0 32px 0;
       max-width: 500px;
     }
@@ -403,3 +403,5 @@ export class SensorsPage {
     });
   }
 }
+
+

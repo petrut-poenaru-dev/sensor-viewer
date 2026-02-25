@@ -121,18 +121,18 @@ interface SensorUpload {
     .icon-badge {
       width: 48px;
       height: 48px;
-      background: linear-gradient(135deg, rgba(0, 212, 255, 0.2) 0%, rgba(0, 153, 255, 0.2) 100%);
+      background: linear-gradient(135deg, rgba(20, 146, 56, 0.2) 0%, rgba(15, 107, 40, 0.2) 100%);
       border-radius: 12px;
       display: flex;
       align-items: center;
       justify-content: center;
-      border: 1px solid rgba(0, 212, 255, 0.3);
+      border: 1px solid rgba(20, 146, 56, 0.3);
 
       mat-icon {
         font-size: 28px;
         width: 28px;
         height: 28px;
-        color: #00d4ff;
+        color: #149238;
       }
     }
 
@@ -148,19 +148,19 @@ interface SensorUpload {
       align-items: center;
       justify-content: space-between;
       padding: 16px;
-      background: rgba(15, 23, 42, 0.5);
+      background: rgba(255, 255, 255, 0.5);
       border-radius: 12px;
-      border: 1px solid rgba(0, 212, 255, 0.15);
+      border: 1px solid rgba(20, 146, 56, 0.15);
       transition: all 0.3s ease;
 
       &:hover {
-        border-color: rgba(0, 212, 255, 0.4);
+        border-color: rgba(20, 146, 56, 0.4);
         transform: translateY(-2px);
       }
 
       &.loaded {
-        border-color: rgba(0, 255, 136, 0.4);
-        background: rgba(0, 255, 136, 0.05);
+        border-color: rgba(26, 181, 71, 0.4);
+        background: rgba(26, 181, 71, 0.05);
       }
 
       &.error {
@@ -179,11 +179,11 @@ interface SensorUpload {
         font-size: 32px;
         width: 32px;
         height: 32px;
-        color: #00d4ff;
+        color: #149238;
       }
 
       .loaded & mat-icon {
-        color: #00ff88;
+        color: #1ab547;
       }
 
       .error & mat-icon {
@@ -197,17 +197,17 @@ interface SensorUpload {
       gap: 4px;
 
       strong {
-        color: #e0e6ed;
+        color: #020202;
         font-size: 0.95rem;
       }
 
       .description {
-        color: #94a3b8;
+        color: #4a4a4a;
         font-size: 0.85rem;
       }
 
       .filename {
-        color: #00d4ff;
+        color: #149238;
         font-size: 0.8rem;
         font-family: monospace;
       }
@@ -223,9 +223,9 @@ interface SensorUpload {
       align-items: center;
       justify-content: space-between;
       padding: 16px;
-      background: rgba(0, 212, 255, 0.05);
+      background: rgba(20, 146, 56, 0.05);
       border-radius: 12px;
-      border: 1px solid rgba(0, 212, 255, 0.2);
+      border: 1px solid rgba(20, 146, 56, 0.2);
       margin-bottom: 16px;
     }
 
@@ -235,15 +235,15 @@ interface SensorUpload {
       gap: 12px;
 
       mat-icon {
-        color: #00d4ff;
+        color: #149238;
         
         &.complete {
-          color: #00ff88;
+          color: #1ab547;
         }
       }
 
       span {
-        color: #e0e6ed;
+        color: #020202;
         font-size: 0.95rem;
       }
     }
@@ -253,14 +253,14 @@ interface SensorUpload {
       align-items: center;
       gap: 12px;
       padding: 16px;
-      background: rgba(0, 255, 136, 0.1);
-      border: 1px solid rgba(0, 255, 136, 0.3);
+      background: rgba(26, 181, 71, 0.1);
+      border: 1px solid rgba(26, 181, 71, 0.3);
       border-radius: 12px;
       color: #86efac;
       animation: slideIn 0.4s ease;
 
       mat-icon {
-        color: #00ff88;
+        color: #1ab547;
         font-size: 24px;
         width: 24px;
         height: 24px;
@@ -381,3 +381,5 @@ export class MultiSensorImportComponent {
     }
   }
 }
+
+

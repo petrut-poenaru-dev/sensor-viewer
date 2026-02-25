@@ -1,71 +1,58 @@
-// Brand Colors - Adaptate pentru logo-ul Graphein
-// Modifică aceste culori pentru a se potrivi cu paleta din logo
+// Brand Colors - Graphein Logo Theme
+// Tema LIGHT verde profesională bazată pe logo-ul Graphein
 
-// Primary Brand Colors (ajustează după culorile din logo)
-$brand-primary: #00d4ff;        // Cyan principal
-$brand-secondary: #0099ff;      // Blue secundar
-$brand-accent: #00ff88;         // Verde accent (pentru success states)
+// Primary Brand Colors (din logo)
+$brand-primary: #149238;        // Verde principal din logo
+$brand-secondary: #0f6b28;      // Verde închis
+$brand-accent: #1ab547;         // Verde deschis accent
+$brand-red: #DB0A18;            // Roșu din logo (pentru alerte/erori)
 
-// Alternative color schemes - decomentează setul care se potrivește cu logo-ul tău:
+// Background Colors - LIGHT THEME
+$bg-light: #F7F7F7;             // Gri deschis din logo (background principal)
+$bg-white: #FFFFFF;             // Alb pur
+$bg-card: #FFFFFF;              // Card background alb
+$bg-hover: #f0f0f0;             // Hover state
 
-// Option 1: Blue Corporate (default)
-// $brand-primary: #0066cc;
-// $brand-secondary: #004999;
-// $brand-accent: #0088ff;
+// Text Colors - LIGHT THEME
+$text-primary: #020202;         // Negru pentru text principal
+$text-secondary: #4a4a4a;       // Gri închis pentru text secundar
+$text-muted: #808080;           // Gri pentru text muted
+$text-light: #F7F7F7;           // Text deschis pentru fundal verde
 
-// Option 2: Purple Tech
-// $brand-primary: #7c3aed;
-// $brand-secondary: #5b21b6;
-// $brand-accent: #a78bfa;
+// Status Colors
+$success: #149238;              // Verde pentru success
+$error: #DB0A18;                // Roșu pentru erori
+$warning: #f59e0b;              // Portocaliu pentru warning
+$info: #149238;                 // Verde pentru info
 
-// Option 3: Green Innovation
-// $brand-primary: #10b981;
-// $brand-secondary: #059669;
-// $brand-accent: #34d399;
+// Brand Primary Opacity Variants
+$brand-primary-10: rgba(20, 146, 56, 0.1);
+$brand-primary-20: rgba(20, 146, 56, 0.2);
+$brand-primary-30: rgba(20, 146, 56, 0.3);
+$brand-primary-40: rgba(20, 146, 56, 0.4);
+$brand-primary-50: rgba(20, 146, 56, 0.5);
+$brand-primary-60: rgba(20, 146, 56, 0.6);
 
-// Option 4: Orange Energy
-// $brand-primary: #f59e0b;
-// $brand-secondary: #d97706;
-// $brand-accent: #fbbf24;
+// Gradients
+$gradient-primary: linear-gradient(135deg, #149238 0%, #0f6b28 100%);
+$gradient-accent: linear-gradient(135deg, #1ab547 0%, #149238 100%);
+$gradient-text: linear-gradient(135deg, #020202 0%, #149238 100%);
+$gradient-bg: linear-gradient(135deg, #FFFFFF 0%, #F7F7F7 50%, #FFFFFF 100%);
+$gradient-card: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(247, 247, 247, 0.95) 100%);
+$gradient-green-subtle: linear-gradient(135deg, rgba(20, 146, 56, 0.05) 0%, rgba(15, 107, 40, 0.05) 100%);
 
-// Option 5: Red Dynamic
-// $brand-primary: #ef4444;
-// $brand-secondary: #dc2626;
-// $brand-accent: #f87171;
+// Shadows - LIGHT THEME
+$shadow-glow: 0 0 20px rgba(20, 146, 56, 0.2);
+$shadow-glow-strong: 0 0 30px rgba(20, 146, 56, 0.3);
+$shadow-card: 0 2px 8px rgba(0, 0, 0, 0.1);
+$shadow-card-hover: 0 4px 16px rgba(20, 146, 56, 0.15);
+$shadow-red: 0 0 20px rgba(219, 10, 24, 0.2);
 
-$bg-dark: #0a0e27;
-$bg-medium: #1a1f3a;
-$bg-light: #0f1729;
-$bg-card: rgba(20, 30, 60, 0.6);
-
-$text-primary: #e0e6ed;
-$text-secondary: #94a3b8;
-$text-muted: #64748b;
-$text-dark: #0a0e27;
-
-$success: #00ff88;
-$error: #ef4444;
-$warning: #fbbf24;
-$info: #3b82f6;
-
-$brand-primary-10: rgba($brand-primary, 0.1);
-$brand-primary-20: rgba($brand-primary, 0.2);
-$brand-primary-30: rgba($brand-primary, 0.3);
-$brand-primary-40: rgba($brand-primary, 0.4);
-$brand-primary-50: rgba($brand-primary, 0.5);
-
-$gradient-primary: linear-gradient(135deg, $brand-primary 0%, $brand-secondary 100%);
-$gradient-text: linear-gradient(135deg, #ffffff 0%, $brand-primary 100%);
-$gradient-bg: linear-gradient(135deg, $bg-dark 0%, $bg-medium 50%, $bg-light 100%);
-
-$shadow-glow: 0 0 20px rgba($brand-primary, 0.3);
-$shadow-glow-strong: 0 0 30px rgba($brand-primary, 0.5);
-$shadow-card: 0 8px 32px rgba(0, 0, 0, 0.4);
-$shadow-card-hover: 0 12px 48px rgba(0, 0, 0, 0.5);
-
-// Border
-$border-primary: 1px solid rgba($brand-primary, 0.2);
-$border-primary-hover: 1px solid rgba($brand-primary, 0.4);
+// Borders - LIGHT THEME
+$border-primary: 1px solid rgba(20, 146, 56, 0.3);
+$border-primary-hover: 1px solid rgba(20, 146, 56, 0.5);
+$border-secondary: 1px solid rgba(20, 146, 56, 0.15);
+$border-light: 1px solid rgba(0, 0, 0, 0.1);
 
 // Transitions
 $transition-fast: 0.2s ease;

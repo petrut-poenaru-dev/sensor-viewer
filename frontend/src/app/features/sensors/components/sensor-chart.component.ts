@@ -47,18 +47,18 @@ import { MatIconModule } from '@angular/material/icon';
     .icon-badge {
       width: 48px;
       height: 48px;
-      background: linear-gradient(135deg, rgba(0, 212, 255, 0.2) 0%, rgba(0, 153, 255, 0.2) 100%);
+      background: linear-gradient(135deg, rgba(20, 146, 56, 0.2) 0%, rgba(15, 107, 40, 0.2) 100%);
       border-radius: 12px;
       display: flex;
       align-items: center;
       justify-content: center;
-      border: 1px solid rgba(0, 212, 255, 0.3);
+      border: 1px solid rgba(20, 146, 56, 0.3);
 
       mat-icon {
         font-size: 28px;
         width: 28px;
         height: 28px;
-        color: #00d4ff;
+        color: #149238;
       }
     }
 
@@ -94,21 +94,21 @@ export class SensorChartComponent {
       toolbar: { show: true },
       animations: { enabled: true },
       background: 'transparent',
-      foreColor: '#94a3b8',
+      foreColor: '#4a4a4a',
     },
     series: [],
     xaxis: { 
       type: 'datetime',
       labels: {
         style: {
-          colors: '#94a3b8',
+          colors: '#4a4a4a',
         }
       }
     },
     yaxis: {
       labels: {
         style: {
-          colors: '#94a3b8',
+          colors: '#4a4a4a',
         },
         formatter: function(value: number) {
           return value.toFixed(4);
@@ -127,15 +127,15 @@ export class SensorChartComponent {
       },
       theme: 'dark',
     },
-    colors: ['#00d4ff'],
+    colors: ['#149238'],
     grid: { 
       strokeDashArray: 3,
-      borderColor: 'rgba(0, 212, 255, 0.1)',
+      borderColor: 'rgba(20, 146, 56, 0.1)',
     },
     legend: { 
       show: true,
       labels: {
-        colors: '#94a3b8',
+        colors: '#4a4a4a',
       }
     },
     noData: { text: 'Nu există date pentru selecția curentă' },
@@ -183,3 +183,5 @@ export class SensorChartComponent {
       });
   }
 }
+
+

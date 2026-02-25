@@ -88,18 +88,18 @@ type TableRow = {
     .icon-badge {
       width: 48px;
       height: 48px;
-      background: linear-gradient(135deg, rgba(0, 212, 255, 0.2) 0%, rgba(0, 153, 255, 0.2) 100%);
+      background: linear-gradient(135deg, rgba(20, 146, 56, 0.2) 0%, rgba(15, 107, 40, 0.2) 100%);
       border-radius: 12px;
       display: flex;
       align-items: center;
       justify-content: center;
-      border: 1px solid rgba(0, 212, 255, 0.3);
+      border: 1px solid rgba(20, 146, 56, 0.3);
 
       mat-icon {
         font-size: 28px;
         width: 28px;
         height: 28px;
-        color: #00d4ff;
+        color: #149238;
       }
     }
 
@@ -110,17 +110,17 @@ type TableRow = {
     .table-wrap {
       overflow: auto;
       border-radius: 12px;
-      border: 1px solid rgba(0, 212, 255, 0.15);
+      border: 1px solid rgba(20, 146, 56, 0.15);
     }
 
     .data-table {
       width: 100%;
-      background: rgba(15, 23, 42, 0.3);
+      background: rgba(255, 255, 255, 0.3);
     }
 
     th {
-      background: rgba(0, 212, 255, 0.1) !important;
-      color: #00d4ff !important;
+      background: rgba(20, 146, 56, 0.1) !important;
+      color: #149238 !important;
       font-weight: 600 !important;
       text-transform: uppercase;
       letter-spacing: 0.5px;
@@ -130,20 +130,20 @@ type TableRow = {
     }
 
     td {
-      color: #e0e6ed !important;
+      color: #020202 !important;
       padding: 12px 16px !important;
       white-space: nowrap;
-      border-bottom: 1px solid rgba(0, 212, 255, 0.1) !important;
+      border-bottom: 1px solid rgba(20, 146, 56, 0.1) !important;
     }
 
     tr:hover td {
-      background: rgba(0, 212, 255, 0.05) !important;
+      background: rgba(20, 146, 56, 0.05) !important;
     }
 
     .custom-paginator {
-      background: rgba(15, 23, 42, 0.3);
-      border-top: 1px solid rgba(0, 212, 255, 0.2);
-      color: #94a3b8;
+      background: rgba(255, 255, 255, 0.3);
+      border-top: 1px solid rgba(20, 146, 56, 0.2);
+      color: #4a4a4a;
     }
 
     @keyframes fadeInUp {
@@ -190,3 +190,5 @@ export class SensorTableComponent {
     this.pageSize = e.pageSize;
   }
 }
+
+

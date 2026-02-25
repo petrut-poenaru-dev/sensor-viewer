@@ -52,17 +52,16 @@ import { AuthService } from '../../core/services/auth.service';
       position: sticky;
       top: 0;
       z-index: 100;
-      background: rgba(10, 14, 39, 0.8);
-      backdrop-filter: blur(20px);
-      border-bottom: 1px solid rgba(0, 212, 255, 0.2);
-      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+      background: #FFFFFF;
+      border-bottom: 2px solid #149238;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
     }
 
     .toolbar {
       background: transparent !important;
-      color: #e0e6ed;
-      padding: 0 24px;
-      height: 70px;
+      color: #020202;
+      padding: 0 32px;
+      height: 72px;
       max-width: 1400px;
       margin: 0 auto;
     }
@@ -70,41 +69,40 @@ import { AuthService } from '../../core/services/auth.service';
     .brand {
       display: flex;
       align-items: center;
-      gap: 12px;
+      gap: 16px;
       cursor: pointer;
       transition: all 0.3s ease;
+      padding: 8px 12px;
+      border-radius: 12px;
 
       &:hover {
-        transform: scale(1.05);
+        background: rgba(20, 146, 56, 0.05);
       }
     }
 
     .company-logo {
-      height: 45px;
+      height: 48px;
       width: auto;
       object-fit: contain;
-      border-radius: 8px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
       transition: all 0.3s ease;
 
       &:hover {
-        box-shadow: 0 6px 25px rgba(0, 212, 255, 0.4);
+        box-shadow: 0 4px 16px rgba(20, 146, 56, 0.3);
+        transform: scale(1.05);
       }
     }
 
     .brand-text {
-      font-size: 1.5rem;
+      font-size: 1.6rem;
       font-weight: 700;
       letter-spacing: 0.5px;
-      background: linear-gradient(135deg, #ffffff 0%, #00d4ff 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
+      color: #020202;
     }
 
     .accent {
-      color: #00d4ff;
-      -webkit-text-fill-color: #00d4ff;
+      color: #149238;
     }
 
     .spacer {
@@ -113,7 +111,7 @@ import { AuthService } from '../../core/services/auth.service';
 
     .nav-links {
       display: flex;
-      gap: 8px;
+      gap: 12px;
       align-items: center;
     }
 
@@ -121,87 +119,70 @@ import { AuthService } from '../../core/services/auth.service';
       display: flex;
       align-items: center;
       gap: 12px;
-      margin-left: 16px;
-      padding-left: 16px;
-      border-left: 1px solid rgba(0, 212, 255, 0.2);
+      margin-left: 20px;
+      padding-left: 20px;
+      border-left: 2px solid rgba(20, 146, 56, 0.2);
     }
 
     .username {
-      color: #00d4ff;
-      font-weight: 500;
-      font-size: 0.9rem;
+      color: #149238;
+      font-weight: 600;
+      font-size: 0.95rem;
+      padding: 6px 12px;
+      background: rgba(20, 146, 56, 0.1);
+      border-radius: 8px;
     }
 
     .logout-btn {
-      color: #94a3b8 !important;
+      color: #4a4a4a !important;
       transition: all 0.3s ease;
 
       &:hover {
-        color: #ef4444 !important;
-        background: rgba(239, 68, 68, 0.1) !important;
+        color: #DB0A18 !important;
+        background: rgba(219, 10, 24, 0.1) !important;
+        transform: rotate(10deg);
       }
     }
 
     .nav-link {
       display: flex;
       align-items: center;
-      gap: 8px;
-      padding: 8px 20px !important;
-      border-radius: 10px !important;
-      color: #94a3b8 !important;
+      gap: 10px;
+      padding: 10px 24px !important;
+      border-radius: 12px !important;
+      color: #4a4a4a !important;
       transition: all 0.3s ease !important;
       position: relative;
-      overflow: hidden;
+      font-weight: 500;
+      border: 2px solid transparent;
 
       mat-icon {
         color: inherit;
-        font-size: 20px;
-        width: 20px;
-        height: 20px;
+        font-size: 22px;
+        width: 22px;
+        height: 22px;
       }
 
       span {
-        font-weight: 500;
+        font-weight: 600;
         font-size: 0.95rem;
       }
 
-      &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(135deg, rgba(0, 212, 255, 0.1) 0%, rgba(0, 153, 255, 0.1) 100%);
-        opacity: 0;
-        transition: opacity 0.3s ease;
-      }
-
       &:hover {
-        color: #00d4ff !important;
-        background: rgba(0, 212, 255, 0.05) !important;
-
-        &::before {
-          opacity: 1;
-        }
+        color: #149238 !important;
+        background: rgba(20, 146, 56, 0.08) !important;
+        border-color: rgba(20, 146, 56, 0.2);
+        transform: translateY(-2px);
       }
 
       &.active {
-        color: #00d4ff !important;
-        background: rgba(0, 212, 255, 0.15) !important;
-        box-shadow: 0 0 20px rgba(0, 212, 255, 0.2),
-                    inset 0 0 20px rgba(0, 212, 255, 0.1);
+        color: #FFFFFF !important;
+        background: linear-gradient(135deg, #149238 0%, #0f6b28 100%) !important;
+        border-color: #149238;
+        box-shadow: 0 4px 12px rgba(20, 146, 56, 0.3);
 
-        &::after {
-          content: '';
-          position: absolute;
-          bottom: 0;
-          left: 50%;
-          transform: translateX(-50%);
-          width: 60%;
-          height: 2px;
-          background: linear-gradient(90deg, transparent, #00d4ff, transparent);
-          box-shadow: 0 0 10px #00d4ff;
+        mat-icon {
+          color: #FFFFFF !important;
         }
       }
     }
@@ -210,7 +191,7 @@ import { AuthService } from '../../core/services/auth.service';
       padding: 32px 24px;
       max-width: 1400px;
       margin: 0 auto;
-      min-height: calc(100vh - 70px);
+      min-height: calc(100vh - 72px);
     }
 
     @media (max-width: 768px) {
@@ -220,11 +201,11 @@ import { AuthService } from '../../core/services/auth.service';
       }
 
       .company-logo {
-        height: 36px;
+        height: 40px;
       }
 
       .brand-text {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
       }
 
       .nav-link span {
@@ -232,7 +213,11 @@ import { AuthService } from '../../core/services/auth.service';
       }
 
       .nav-link {
-        padding: 8px 12px !important;
+        padding: 10px 14px !important;
+      }
+
+      .username {
+        display: none;
       }
     }
   `],
@@ -244,3 +229,5 @@ export class PageShellComponent {
     this.authService.logout();
   }
 }
+
+

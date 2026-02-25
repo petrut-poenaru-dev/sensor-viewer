@@ -174,18 +174,18 @@ import { MultiSensorStoreService } from '../../../core/services/multi-sensor-sto
     .icon-badge {
       width: 48px;
       height: 48px;
-      background: linear-gradient(135deg, rgba(0, 212, 255, 0.2) 0%, rgba(0, 153, 255, 0.2) 100%);
+      background: linear-gradient(135deg, rgba(20, 146, 56, 0.2) 0%, rgba(15, 107, 40, 0.2) 100%);
       border-radius: 12px;
       display: flex;
       align-items: center;
       justify-content: center;
-      border: 1px solid rgba(0, 212, 255, 0.3);
+      border: 1px solid rgba(20, 146, 56, 0.3);
 
       mat-icon {
         font-size: 28px;
         width: 28px;
         height: 28px;
-        color: #00d4ff;
+        color: #149238;
       }
     }
 
@@ -203,13 +203,13 @@ import { MultiSensorStoreService } from '../../../core/services/multi-sensor-sto
       gap: 12px;
       font-size: 1.1rem;
       font-weight: 600;
-      color: #e0e6ed;
+      color: #020202;
       margin: 0 0 16px 0;
       padding-bottom: 12px;
-      border-bottom: 1px solid rgba(0, 212, 255, 0.2);
+      border-bottom: 1px solid rgba(20, 146, 56, 0.2);
 
       mat-icon {
-        color: #00d4ff;
+        color: #149238;
         font-size: 24px;
         width: 24px;
         height: 24px;
@@ -302,3 +302,5 @@ export class MultiSensorParamsComponent implements OnInit {
       });
   }
 }
+
+

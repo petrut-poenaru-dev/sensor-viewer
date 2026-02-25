@@ -120,18 +120,18 @@ type ViewMode = 'BRUT' | 'DETRENT';
     .icon-badge {
       width: 48px;
       height: 48px;
-      background: linear-gradient(135deg, rgba(0, 212, 255, 0.2) 0%, rgba(0, 153, 255, 0.2) 100%);
+      background: linear-gradient(135deg, rgba(20, 146, 56, 0.2) 0%, rgba(15, 107, 40, 0.2) 100%);
       border-radius: 12px;
       display: flex;
       align-items: center;
       justify-content: center;
-      border: 1px solid rgba(0, 212, 255, 0.3);
+      border: 1px solid rgba(20, 146, 56, 0.3);
 
       mat-icon {
         font-size: 28px;
         width: 28px;
         height: 28px;
-        color: #00d4ff;
+        color: #149238;
       }
     }
 
@@ -154,9 +154,9 @@ type ViewMode = 'BRUT' | 'DETRENT';
     .plot-container {
       width: 100%;
       height: 600px;
-      background: rgba(15, 23, 42, 0.3);
+      background: rgba(255, 255, 255, 0.3);
       border-radius: 12px;
-      border: 1px solid rgba(0, 212, 255, 0.2);
+      border: 1px solid rgba(20, 146, 56, 0.2);
     }
 
     .empty-state {
@@ -165,14 +165,14 @@ type ViewMode = 'BRUT' | 'DETRENT';
       align-items: center;
       justify-content: center;
       padding: 60px 20px;
-      color: #94a3b8;
+      color: #4a4a4a;
       text-align: center;
 
       mat-icon {
         font-size: 64px;
         width: 64px;
         height: 64px;
-        color: rgba(0, 212, 255, 0.3);
+        color: rgba(20, 146, 56, 0.3);
         margin-bottom: 16px;
       }
 
@@ -188,9 +188,9 @@ type ViewMode = 'BRUT' | 'DETRENT';
       gap: 24px;
       margin-top: 24px;
       padding: 20px;
-      background: rgba(0, 212, 255, 0.05);
+      background: rgba(20, 146, 56, 0.05);
       border-radius: 12px;
-      border: 1px solid rgba(0, 212, 255, 0.2);
+      border: 1px solid rgba(20, 146, 56, 0.2);
     }
 
     .corner-values {
@@ -205,17 +205,17 @@ type ViewMode = 'BRUT' | 'DETRENT';
       justify-content: space-between;
       align-items: center;
       padding: 8px 12px;
-      background: rgba(15, 23, 42, 0.5);
+      background: rgba(255, 255, 255, 0.5);
       border-radius: 8px;
-      border: 1px solid rgba(0, 212, 255, 0.15);
+      border: 1px solid rgba(20, 146, 56, 0.15);
 
       .label {
-        color: #94a3b8;
+        color: #4a4a4a;
         font-size: 0.9rem;
       }
 
       .value {
-        color: #00d4ff;
+        color: #149238;
         font-weight: 600;
         font-family: monospace;
       }
@@ -408,14 +408,14 @@ export class MultiSensor3DChartComponent implements OnInit, OnDestroy {
         colorbar: {
           title: { text: 'dZ (mm)' },
           titleside: 'right',
-          tickfont: { color: '#e0e6ed' },
-          titlefont: { color: '#e0e6ed' }
+          tickfont: { color: '#020202' },
+          titlefont: { color: '#020202' }
         },
         contours: {
           z: {
             show: true,
             usecolormap: true,
-            highlightcolor: '#00d4ff',
+            highlightcolor: '#149238',
             project: { z: true }
           }
         }
@@ -430,13 +430,13 @@ export class MultiSensor3DChartComponent implements OnInit, OnDestroy {
         text: ['Z1', 'Z2', 'Z3', 'Z4'],
         textposition: 'top center',
         textfont: {
-          color: '#00d4ff',
+          color: '#149238',
           size: 14,
           family: 'Arial Black, sans-serif'
         },
         marker: {
           size: 10,
-          color: '#00d4ff',
+          color: '#149238',
           symbol: 'diamond',
           line: {
             color: '#ffffff',
@@ -451,34 +451,34 @@ export class MultiSensor3DChartComponent implements OnInit, OnDestroy {
     const layout: any = {
       title: {
         text: `Suprafața (dZ) - ${this.viewModeControl.value}`,
-        font: { color: '#e0e6ed', size: 18 }
+        font: { color: '#020202', size: 18 }
       },
       scene: {
         xaxis: {
           title: { text: 'X (m)' },
-          titlefont: { color: '#e0e6ed' },
-          tickfont: { color: '#94a3b8' },
-          gridcolor: 'rgba(0, 212, 255, 0.2)',
-          zerolinecolor: 'rgba(0, 212, 255, 0.4)'
+          titlefont: { color: '#020202' },
+          tickfont: { color: '#4a4a4a' },
+          gridcolor: 'rgba(20, 146, 56, 0.2)',
+          zerolinecolor: 'rgba(20, 146, 56, 0.4)'
         },
         yaxis: {
           title: { text: 'Y (m)' },
-          titlefont: { color: '#e0e6ed' },
-          tickfont: { color: '#94a3b8' },
-          gridcolor: 'rgba(0, 212, 255, 0.2)',
-          zerolinecolor: 'rgba(0, 212, 255, 0.4)'
+          titlefont: { color: '#020202' },
+          tickfont: { color: '#4a4a4a' },
+          gridcolor: 'rgba(20, 146, 56, 0.2)',
+          zerolinecolor: 'rgba(20, 146, 56, 0.4)'
         },
         zaxis: {
           title: { text: 'dZ (mm)' },
-          titlefont: { color: '#e0e6ed' },
-          tickfont: { color: '#94a3b8' },
-          gridcolor: 'rgba(0, 212, 255, 0.2)',
-          zerolinecolor: 'rgba(0, 212, 255, 0.4)'
+          titlefont: { color: '#020202' },
+          tickfont: { color: '#4a4a4a' },
+          gridcolor: 'rgba(20, 146, 56, 0.2)',
+          zerolinecolor: 'rgba(20, 146, 56, 0.4)'
         },
         camera: {
           eye: { x: 1.5, y: 1.5, z: 1.3 }
         },
-        bgcolor: 'rgba(15, 23, 42, 0.5)',
+        bgcolor: 'rgba(255, 255, 255, 0.5)',
         annotations: [
           {
             x: 0,
@@ -489,16 +489,16 @@ export class MultiSensor3DChartComponent implements OnInit, OnDestroy {
             arrowhead: 2,
             arrowsize: 1,
             arrowwidth: 2,
-            arrowcolor: '#00d4ff',
+            arrowcolor: '#149238',
             ax: -50,
             ay: -50,
             font: {
-              color: '#00d4ff',
+              color: '#149238',
               size: 12,
               family: 'Arial, sans-serif'
             },
             bgcolor: 'rgba(0, 0, 0, 0.7)',
-            bordercolor: '#00d4ff',
+            bordercolor: '#149238',
             borderwidth: 1,
             borderpad: 4
           },
@@ -511,16 +511,16 @@ export class MultiSensor3DChartComponent implements OnInit, OnDestroy {
             arrowhead: 2,
             arrowsize: 1,
             arrowwidth: 2,
-            arrowcolor: '#00d4ff',
+            arrowcolor: '#149238',
             ax: 50,
             ay: -50,
             font: {
-              color: '#00d4ff',
+              color: '#149238',
               size: 12,
               family: 'Arial, sans-serif'
             },
             bgcolor: 'rgba(0, 0, 0, 0.7)',
-            bordercolor: '#00d4ff',
+            bordercolor: '#149238',
             borderwidth: 1,
             borderpad: 4
           },
@@ -533,16 +533,16 @@ export class MultiSensor3DChartComponent implements OnInit, OnDestroy {
             arrowhead: 2,
             arrowsize: 1,
             arrowwidth: 2,
-            arrowcolor: '#00d4ff',
+            arrowcolor: '#149238',
             ax: -50,
             ay: 50,
             font: {
-              color: '#00d4ff',
+              color: '#149238',
               size: 12,
               family: 'Arial, sans-serif'
             },
             bgcolor: 'rgba(0, 0, 0, 0.7)',
-            bordercolor: '#00d4ff',
+            bordercolor: '#149238',
             borderwidth: 1,
             borderpad: 4
           },
@@ -555,16 +555,16 @@ export class MultiSensor3DChartComponent implements OnInit, OnDestroy {
             arrowhead: 2,
             arrowsize: 1,
             arrowwidth: 2,
-            arrowcolor: '#00d4ff',
+            arrowcolor: '#149238',
             ax: 50,
             ay: 50,
             font: {
-              color: '#00d4ff',
+              color: '#149238',
               size: 12,
               family: 'Arial, sans-serif'
             },
             bgcolor: 'rgba(0, 0, 0, 0.7)',
-            bordercolor: '#00d4ff',
+            bordercolor: '#149238',
             borderwidth: 1,
             borderpad: 4
           }
@@ -585,3 +585,5 @@ export class MultiSensor3DChartComponent implements OnInit, OnDestroy {
     Plotly.newPlot(this.plotContainer.nativeElement, data, layout, config);
   }
 }
+
+
